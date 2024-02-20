@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERMIND</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Protest+Guerrilla&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nosifer&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="icon" href="./83ce0a0fa068b1b9bd46360eb6bd8cc7.png" type="image/png">
+</head>
+
+<body>
+    <div class="title">
+        <div class="brain">
+        </div>
+        <h2>MASTERMIND</h2>
+        <h3>Challenge your mind!</h3>
+    </div>
+
+
+    <div class="start-game-modal modal">
+        <h2>DIFFICULTY</h2>
+        <div class="range"><input id="difficulty-range" type="range" min="4" max="7" value="1"><span
+                id="difficulty-value">easy</span>
+        </div>
+        <div class="color-choices-container">
+
+        </div>
+        <img src="./play.png" id="play-btn">
+
+    </div>
+
+
+    <div class="end-game-modal modal">
+        <div id="result"></div>
+    </div>
+
+
+
+
+    <div id="solution">
+    </div>
+
+    <form id="form" class="">
+        <input type="submit" value="Try it">
+        <div class="proposition">
+            <div class="title-proposition">Your proposition :</div>
+            <div class="user-color-choices-container">
+            </div>
+        </div>
+        <div class="color-choices-container-game">
+        </div>
+    </form>
+    <!-- <script src="./display.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./mastermind.js"></script>
+</body>
+
+</html>
