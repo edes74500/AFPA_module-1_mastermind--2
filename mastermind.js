@@ -156,7 +156,7 @@ const colorChoiceContainerDisplay = () => {
   }
 
   colorChoicesContainer.innerHTML = "";
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < mastermind.colorSize; i++) {
     let colorChoice = document.createElement("div");
     colorChoice.classList.add("circle-2");
     colorChoice.draggable = true;
@@ -192,7 +192,6 @@ const colorChoiceContainerDisplay = () => {
 
 playBtn.addEventListener("click", (e) => {
   gameStarted = true;
-
   colorChoiceContainerDisplay();
   console.log("game started");
 });

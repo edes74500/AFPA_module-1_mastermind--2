@@ -436,7 +436,6 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
 }
 .color-choices-container .circle {
   height: 30px;
